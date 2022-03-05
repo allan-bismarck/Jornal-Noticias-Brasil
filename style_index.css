@@ -15,6 +15,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body#curiosidades {
+    background-color: #CC7484;
+}
+
 h1 {
     font-family: serif;
     padding: 70px;
@@ -28,6 +32,22 @@ header {
     color: white;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.699);
     list-style: none;
+}
+
+header#esportes {
+    background-image: linear-gradient(to bottom, #32CD32 40%, #287233);
+}
+
+header#politica {
+    background-image: linear-gradient(to bottom, #F17105 40%, #CD4505);
+}
+
+header#entretenimento {
+    background-image: linear-gradient(to top, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
+}
+
+body#curiosidades > header {
+    background-image: linear-gradient(to bottom, #CC2936 40%, #73171F);
 }
 
 a {
@@ -123,3 +143,4 @@ footer {
     color: white;
     font-size: 10pt;
 }
+
