@@ -15,7 +15,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body#curiosidades {
+html#esportes > body {
+    background-color: lightgreen;
+}
+
+html#politica > body {
+    background-color: #FF9C71;
+}
+
+html#entretenimento > body {
+    background-color: lightblue;
+}
+
+html#curiosidades > body {
     background-color: #CC7484;
 }
 
@@ -34,19 +46,19 @@ header {
     list-style: none;
 }
 
-header#esportes {
+html#esportes > body > header {
     background-image: linear-gradient(to bottom, #32CD32 40%, #287233);
 }
 
-header#politica {
+html#politica > body > header {
     background-image: linear-gradient(to bottom, #F17105 40%, #CD4505);
 }
 
-header#entretenimento {
+html#entretenimento > body > header {
     background-image: linear-gradient(to top, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
 }
 
-body#curiosidades > header {
+html#curiosidades > body > header {
     background-image: linear-gradient(to bottom, #CC2936 40%, #73171F);
 }
 
@@ -58,6 +70,22 @@ a {
 div#menu {
     display: flex;
     background-color: rgb(206, 119, 21);
+}
+
+html#esportes > body > header > div#menu {
+    background-color: darkgreen;
+}
+
+html#politica > body > header > div#menu {
+    background-color: #A83A0B;
+}
+
+html#entretenimento > body > header > div#menu {
+    background-color: darkblue;
+}
+
+html#curiosidades > body > header > div#menu {
+    background-color: #63141B;
 }
 
 div#menu > div {
@@ -144,3 +172,18 @@ footer {
     font-size: 10pt;
 }
 
+html#esportes > body > footer {
+    background-image: linear-gradient(to top, #32CD32 40%, #287233);
+}
+
+html#politica > body > footer {
+    background-image: linear-gradient(to top, #F17105 40%, #CD4505);
+}
+
+html#entretenimento > body > footer {
+    background-image: linear-gradient(to bottom, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
+}
+
+html#curiosidades > body > footer {
+    background-image: linear-gradient(to top, #CC2936 40%, #73171F);
+}
