@@ -1,2 +1,2 @@
 # Jornal-Noticias-Brasil
-Site desenvolvido com HTML, CSS e JavaScript puros
+Site desenvolvido com HTML5, CSS3 e JavaScript puros
