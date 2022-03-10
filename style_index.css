@@ -2,33 +2,59 @@
 
 :root {
     --largura-coluna: 160px;
-    --cor-fundo: rgb(162, 152, 219);
-  }
+    --cor-index: rgb(161, 161, 161);
+    --cor-esportes: rgb(144, 238, 144);
+    --cor-politica: rgb(255, 156, 113);
+    --cor-entretenimento: rgb(173, 216, 230);
+    --cor-curiosidades: rgb(204, 116, 132);
+    --footer-index: black;
+    --footer-esportes: #32CD32;
+    --footer-politica: #F17105;
+    --footer-entretenimento: rgb(29, 29, 255);
+    --footer-curiosidades: #CC2936;
+}
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
+
+html#esportes {
+    background-image: url(esportes/architecture-1853520_1920.jpg);
+}
+
+html#politica {
+    background-image: url(politica/international-5319462_1920.jpg);
+}
+
+html#entretenimento {
+    background-image: url(entretenimento/popcorn-1433326_1920.jpg);
+}
+
+html#curiosidades {
+    background-image: url(curiosidades/nature-4851004_1920.jpg);
+}
+
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-index);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 html#esportes > body {
-    background-color: lightgreen;
+    background-color: var(--cor-esportes);
 }
 
 html#politica > body {
-    background-color: #FF9C71;
+    background-color: var(--cor-politica);
 }
 
 html#entretenimento > body {
-    background-color: lightblue;
+    background-color: var(--cor-entretenimento);
 }
 
 html#curiosidades > body {
-    background-color: #CC7484;
+    background-color: var(--cor-curiosidades);
 }
 
 h1 {
@@ -40,26 +66,38 @@ h1 {
 }
 
 header {
-    background-image: linear-gradient(to bottom, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
+    background-image: url(imagens_index/newspaper-595478_1920.jpg);
+    background-position-x: 60%;
+    background-position-y: 43%;
+    background-clip: content-box;
     color: white;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.699);
     list-style: none;
+    position: relative;
 }
 
 html#esportes > body > header {
-    background-image: linear-gradient(to bottom, #32CD32 40%, #287233);
+    background-image: url(esportes/imagens/architecture-1853520_1920.jpg);
+    background-position-x: 60%;
+    background-position-y: 70%;
 }
 
 html#politica > body > header {
-    background-image: linear-gradient(to bottom, #F17105 40%, #CD4505);
+    background-image: url(politica/imagens/international-5319462_1920.jpg);
+    background-position-x: 90%;
+    background-position-y: 70%;
 }
 
 html#entretenimento > body > header {
-    background-image: linear-gradient(to top, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
+    background-image: url(entretenimento/imagens/popcorn-1433326_1920.jpg);
+    background-position-x: 65%;
+    background-position-y: 45%;
 }
 
 html#curiosidades > body > header {
-    background-image: linear-gradient(to bottom, #CC2936 40%, #73171F);
+    background-image: url(curiosidades/imagens/nature-4851004_1920.jpg);
+    background-position-x: 60%;
+    background-position-y: 55%;
 }
 
 a {
@@ -68,24 +106,8 @@ a {
 }
 
 div#menu {
+    background-color: rgba(0, 0, 0, 0.397);
     display: flex;
-    background-color: rgb(206, 119, 21);
-}
-
-html#esportes > body > header > div#menu {
-    background-color: darkgreen;
-}
-
-html#politica > body > header > div#menu {
-    background-color: #A83A0B;
-}
-
-html#entretenimento > body > header > div#menu {
-    background-color: darkblue;
-}
-
-html#curiosidades > body > header > div#menu {
-    background-color: #63141B;
 }
 
 div#menu > div {
@@ -97,6 +119,7 @@ div#menu > div > a {
     padding: 8px 10px;
     text-decoration: unset;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 div#menu > div > a:hover {
@@ -104,12 +127,12 @@ div#menu > div > a:hover {
     padding: 8px 10px;
     color: white;
     text-decoration: unset;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 div#menu > div > div {
     position: absolute;
-    background-color: darkblue;
+    background-color: rgb(29, 29, 255);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
     text-align: center;
     column-width: var(--largura-coluna);
@@ -128,7 +151,7 @@ div#menu > div > div > a:hover {
     text-align: center;
     color: white;
     text-decoration: unset;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .esconder {
@@ -165,25 +188,31 @@ img {
 }
 
 footer {
-    padding: 15px 0px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgb(11, 11, 63), rgb(28, 28, 247) 60%);
+    padding: 5px 0px; 
+    background-color: var(--footer-index);
+    background-position-x: 60%;
+    background-position-y: 55%;
+    position: relative;
+}
+
+footer > p {
     color: white;
     font-size: 10pt;
+    text-align: center;
 }
 
 html#esportes > body > footer {
-    background-image: linear-gradient(to top, #32CD32 40%, #287233);
+    background-color: var(--footer-esportes);
 }
 
 html#politica > body > footer {
-    background-image: linear-gradient(to top, #F17105 40%, #CD4505);
+    background-color: var(--footer-politica);
 }
 
 html#entretenimento > body > footer {
-    background-image: linear-gradient(to bottom, rgb(28, 28, 247) 40%, rgb(11, 11, 63));
+    background-color: var(--footer-entretenimento);
 }
 
 html#curiosidades > body > footer {
-    background-image: linear-gradient(to top, #CC2936 40%, #73171F);
+    background-color: var(--footer-curiosidades);
 }
