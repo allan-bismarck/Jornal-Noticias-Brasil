@@ -7,15 +7,15 @@
     <title>Vôlei</title>
     <link rel="stylesheet" href="../style_index.css">
 </head>
-<body onresize="diminuiu()">
+<body onload="diminuiu()" onresize="diminuiu()">
     <header>
         <h1>VÔLEI</h1>
         <div id="menu">
             <div><a href="../index.html">Início</a></div>
 
             <div>
-                <a href="#" onmouseover="entrou('esportes')" onmouseout="saiu('esportes')">Esportes</a>
-                    <div onmouseover="entrou('esportes')" onmouseout="saiu('esportes')" class="esconder" id="menu_esportes">
+                <a href="#" onclick="entrou('esportes', false) "onmouseover="entrou('esportes', true)" onmouseout="saiu('esportes')">Esportes</a>
+                    <div onmouseover="entrou('esportes')" onmouseout="saiu('esportes')" id="menu_esportes">
                         <a href="futebol.html">Futebol</a>
                         <a href="volei.html">Vôlei</a>
                         <a href="basquete.html">Basquete</a>
@@ -24,16 +24,16 @@
             </div>
 
             <div>
-                <a href="#" onmouseover="entrou('politica')" onmouseout="saiu('politica')">Política</a>
-                    <div onmouseover="entrou('politica')" onmouseout="saiu('politica')" class="esconder" id="menu_politica">
+                <a href="#" onclick="entrou('politica', false) "onmouseover="entrou('politica', true)" onmouseout="saiu('politica')">Política</a>
+                    <div onmouseover="entrou('politica')" onmouseout="saiu('politica')" id="menu_politica">
                         <a href="../politica/nacional.html">Nacional</a>
                         <a href="../politica/internacional.html">Internacional</a>
                     </div>
             </div>
 
             <div>
-                <a href="#" onmouseover="entrou('entretenimento')" onmouseout="saiu('entretenimento')">Entretenimento</a>
-                    <div onmouseover="entrou('entretenimento')" onmouseout="saiu('entretenimento')" class="esconder" id="menu_entretenimento">
+                <a href="#" onclick="entrou('entretenimento', false) "onmouseover="entrou('entretenimento', true)" onmouseout="saiu('entretenimento')">Entretenimento</a>
+                    <div onmouseover="entrou('entretenimento')" onmouseout="saiu('entretenimento')" id="menu_entretenimento">
                         <a href="../entretenimento/series.html">Séries</a>
                         <a href="../entretenimento/filmes.html">Filmes</a>
                         <a href="../entretenimento/novelas.html">Novelas</a>
@@ -41,8 +41,8 @@
             </div>
             
             <div>
-                <a href="#" onmouseover="entrou('curiosidades')" onmouseout="saiu('curiosidades')">Curiosidades</a>
-                    <div onmouseover="entrou('curiosidades')" onmouseout="saiu('curiosidades')" class="esconder" id="menu_curiosidades">
+                <a href="#" onclick="entrou('curiosidades', false) "onmouseover="entrou('curiosidades', true)" onmouseout="saiu('curiosidades')">Curiosidades</a>
+                    <div onmouseover="entrou('curiosidades')" onmouseout="saiu('curiosidades')" id="menu_curiosidades">
                         <a href="../curiosidades/animais.html">Animais</a>
                         <a href="../curiosidades/lugares.html">Lugares</a>
                     </div>

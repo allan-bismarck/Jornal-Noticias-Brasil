@@ -136,6 +136,7 @@ div#menu > div > div {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
     text-align: center;
     column-width: var(--largura-coluna);
+    display: none;
 }
 
 div#menu > div > div > a {
@@ -152,10 +153,6 @@ div#menu > div > div > a:hover {
     color: white;
     text-decoration: unset;
     background-color: rgba(0, 0, 0, 0.15);
-}
-
-.esconder {
-    display: none;
 }
 
 main {
