@@ -59,7 +59,7 @@ html#curiosidades > body {
 
 h1 {
     font-family: serif;
-    padding: 70px;
+    padding: 70px 0px;
     padding-bottom: 70px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.582);
     text-align: center;
@@ -167,19 +167,18 @@ main {
     flex-wrap: wrap;
 }
 
-.minisecao {
+section {
     padding: 5px;
     max-width: 280px;
     margin: 0px auto;
 }
 
 p {
-    padding: 5px 0px;
     color: rgba(0, 0, 0, 0.726);
 }
 
 img {
-    max-width: 280px;
+    max-width: 100%;
     margin: 0px auto;
     display: block;
 }
@@ -196,6 +195,7 @@ footer > p {
     color: white;
     font-size: 10pt;
     text-align: center;
+    padding: 5px 0px;
 }
 
 html#esportes > body > footer {

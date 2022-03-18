@@ -11,6 +11,8 @@ let largura_curiosidades = m_curiosidades.style.width
 let menu = document.querySelector('div#menu')
 let body_style = document.body.style
 
+let sections = document.getElementsByTagName('section')
+
 function entrou(elemento, mouseover) {
     let tela = document.documentElement.clientWidth
 
@@ -77,6 +79,7 @@ function saiu(elemento) {
 
 function diminuiu() {
     let tela = document.documentElement.clientWidth
+    length = sections.length
     
     if(tela < 550) {
         menu.style.display = 'block'
@@ -89,6 +92,9 @@ function diminuiu() {
         m_politica.style.position = 'relative'
         m_entretenimento.style.position = 'relative'
         m_curiosidades.style.position = 'relative'
+        for(i = 0; i < length ; i++ ) {
+            sections[i].style.maxWidth = '95%'
+        }
     }
 
     if(tela >= 550) {
@@ -102,5 +108,17 @@ function diminuiu() {
         m_politica.style.position = 'absolute'
         m_entretenimento.style.position = 'absolute'
         m_curiosidades.style.position = 'absolute'
+    }
+
+    if(tela < 890 && tela > 550) {
+        for(i = 0; i < length ; i++ ) {
+            sections[i].style.maxWidth = '45%'
+        }
+    }
+
+    if(tela >= 890) {
+        for(i = 0; i < length ; i++ ) {
+            sections[i].style.maxWidth = '280px'
+        }
     }
 }
