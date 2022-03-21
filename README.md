@@ -1,4 +1,4 @@
-<a href="README_portuguese.md" target="_blank">Leia em português<a/> 
+<a href="README_portuguese.md" target="_blank">Leia esta página em português<a/> 
 
 # Jornal-Noticias-Brasil
 
