@@ -1,4 +1,4 @@
-<a href="README.md" target="_blank">Translate to english<a/> 
+<a href="README.md" target="_blank">Read this page in english<a/> 
 
 # Jornal-Noticias-Brasil
 
