@@ -76,25 +76,25 @@ header {
     position: relative;
 }
 
-html#esportes > body > header {
+html#esportes header {
     background-image: url(esportes/imagens/architecture-1853520_1920.jpg);
     background-position-x: 60%;
     background-position-y: 70%;
 }
 
-html#politica > body > header {
+html#politica header {
     background-image: url(politica/imagens/international-5319462_1920.jpg);
     background-position-x: 90%;
     background-position-y: 70%;
 }
 
-html#entretenimento > body > header {
+html#entretenimento header {
     background-image: url(entretenimento/imagens/popcorn-1433326_1920.jpg);
     background-position-x: 65%;
     background-position-y: 45%;
 }
 
-html#curiosidades > body > header {
+html#curiosidades header {
     background-image: url(curiosidades/imagens/nature-4851004_1920.jpg);
     background-position-x: 60%;
     background-position-y: 55%;
@@ -108,50 +108,42 @@ a {
 div#menu {
     background-color: rgba(0, 0, 0, 0.397);
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 div#menu > div {
+    padding: 10px 0px;
     column-width: var(--largura-coluna);
+    text-align: center;
+}
+
+div#menu > div:hover {
+    background-color: rgba(0, 0, 0, 0.397);
 }
 
 div#menu > div > a {
-    display: block;
-    padding: 8px 10px;
     text-decoration: unset;
-    text-align: center;
     color: rgb(255, 255, 255);
-}
-
-div#menu > div > a:hover {
-    display: block;
-    padding: 8px 10px;
-    color: white;
-    text-decoration: unset;
-    background-color: rgba(0, 0, 0, 0.25);
 }
 
 div#menu > div > div {
     position: absolute;
-    background-color: rgb(29, 29, 255);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
     text-align: center;
+    margin-top: 10px;
     column-width: var(--largura-coluna);
     display: none;
 }
 
 div#menu > div > div > a {
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     text-decoration: unset; 
     display: block;
 }
 
 div#menu > div > div > a:hover {
-    display: block;
-    padding: 8px;
-    text-align: center;
-    color: white;
-    text-decoration: unset;
     background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -173,7 +165,12 @@ section {
     margin: 0px auto;
 }
 
+h2 {
+    padding-bottom: 3px;
+}
+
 p {
+    padding: 5px 4px 0px 4px;
     color: rgba(0, 0, 0, 0.726);
 }
 
@@ -212,4 +209,56 @@ html#entretenimento > body > footer {
 
 html#curiosidades > body > footer {
     background-color: var(--footer-curiosidades);
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+    section {
+        max-width: 98%;
+    }
+    div#menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    div#menu > div {
+        width: 100%;
+        column-width: auto;
+    }
+    div#menu > div > div {
+        columns: 1;
+        position: relative;
+        box-shadow: none;
+    }
+    div#menu > div > div > a:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    section {
+        max-width: 48%;
+    }
+    div#menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    div#menu > div {
+        width: 100%;
+        column-width: auto;
+    }
+    div#menu > div > div {
+        columns: 1;
+        position: relative;
+        box-shadow: none;
+    }
+    div#menu > div > div > a:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:889px) {
+    section {
+        max-width: 48%;
+    }
 }
